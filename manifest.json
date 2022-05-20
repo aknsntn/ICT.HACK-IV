@@ -1,0 +1,22 @@
+{
+    "name": "mental ext",
+    "description": "",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": [
+        "storage",
+        "tabs",
+        "activeTab",
+        "scripting"
+    ],
+    "action": {
+        "default_popup": "./popup/popup.html",
+        "default_icon": "./img/logo128.png"
+    },
+    "icons": {
+        "16": "./img/logo.png",
+        "32": "./img/logo.png",
+        "48": "./img/logo.png",
+        "128": "./img/logo.png"
+    }
+}
