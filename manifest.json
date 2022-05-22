@@ -1,5 +1,5 @@
 {
-    "name": "mental ext",
+    "name": "Mood Scan",
     "description": "",
     "version": "1.0",
     "manifest_version": 3,
@@ -19,15 +19,11 @@
         "48": "./img/logo-g.png",
         "128": "./img/logo-g.png"
     },
-    "background": {
-        "service-worker": "js/background.js"
-    },
     "content_scripts": [
         {
             "matches": ["<all_urls>"],
-            "js": ["js/some-script.js"],
-            "css": ["css/main.css"],
-            "run_at": "document_end"
+            "js": ["js/some-script.js", "js/face-api.min.js"],
+            "css": ["css/styles.css"]
         }
     ]
 }
