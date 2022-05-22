@@ -1,0 +1,29 @@
+{
+    "name": "Mood Scan",
+    "description": "Expression detection extention",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": [
+        "storage",
+        "tabs",
+        "activeTab",
+        "scripting"
+    ],
+    "action": {
+        "default_popup": "./popup/popup.html",
+        "default_icon": "./img/logo-g.png"
+    },
+    "icons": {
+        "16": "./img/logo-g.png",
+        "32": "./img/logo-g.png",
+        "48": "./img/logo-g.png",
+        "128": "./img/logo-g.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["js/some-script.js", "js/face-api.min.js"],
+            "css": ["css/styles.css"]
+        }
+    ]
+}
